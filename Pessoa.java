@@ -10,11 +10,11 @@ abstract public class Pessoa {
     protected int idade;
     protected String sexo;
 
-    public Pessoa(String nome, int cpf, int idade, String sexo) {
+    public Pessoa(String nome, int cpf, int idade) {
         this.nome = nome;
         this.cpf = cpf;
         this.idade = idade;
-        this.sexo = sexo;
+        
 
     }
 
@@ -40,14 +40,6 @@ abstract public class Pessoa {
 
     public void setIdade(int idade) {
         this.idade = idade;
-    }
-
-    public String getSexo() {
-        return sexo;
-    }
-
-    public void setSexo(String sexo) {
-        this.sexo = sexo;
     }
 
 }

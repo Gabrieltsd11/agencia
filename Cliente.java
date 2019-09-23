@@ -1,23 +1,23 @@
 package Projeto2;
 public class Cliente extends Pessoa{
-    private  ;
+    private String cnh;
     
-    public Cliente(String nome, int cpf, int idade, String sexo) {
+    public Cliente(String nome, int cpf, int idade) {
        
-        super(nome, cpf, idade, sexo);
+        super(nome, cpf, idade);
     }
 
-    Cliente(String luiz, int i, int i0, String masculino, String colonia_agricola_samambaia, String brasilia, String df, int i1) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Cliente(String cnh, String nome, int cpf, int idade) {
+        super(nome, cpf, idade);
+        this.cnh = cnh;
     }
 
-    public String get() {
-        return ;
+    public String getCnh() {
+        return cnh;
     }
 
-    public void set() {
-        this. = ;
+    public void setCnh(String cnh) {
+        this.cnh = cnh;
     }
-    
-    
+
 }
